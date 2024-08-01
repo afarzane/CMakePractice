@@ -1,0 +1,8 @@
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles/edit_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles/rebuild_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/inc/CMakeFiles/edit_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/inc/CMakeFiles/rebuild_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/src/CMakeFiles/edit_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/src/CMakeFiles/rebuild_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/examples/CMakeFiles/edit_cache.dir
+/home/amiralifa/Documents/Programming/CMakeTutorial/build/examples/CMakeFiles/rebuild_cache.dir
