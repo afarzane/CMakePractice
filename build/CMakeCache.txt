@@ -219,13 +219,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-CMakeTutorial_BINARY_DIR:STATIC=/home/amiralifa/Documents/Programming/CMakeTutorial/build
+CMakeTutorial_BINARY_DIR:STATIC=/home/amiralifa/Documents/Programming/CMakeTutorial/build/examples
 
 //Value Computed by CMake
-CMakeTutorial_IS_TOP_LEVEL:STATIC=ON
+CMakeTutorial_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMakeTutorial_SOURCE_DIR:STATIC=/home/amiralifa/Documents/Programming/CMakeTutorial
+CMakeTutorial_SOURCE_DIR:STATIC=/home/amiralifa/Documents/Programming/CMakeTutorial/examples
 
 
 ########################

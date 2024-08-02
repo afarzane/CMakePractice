@@ -1,9 +1,8 @@
 #include <iostream>
 
-using namespace std;
+#include "cmakelib/printhello.h"
 
 int main(){
-    cout << "Hello world!" << endl;
-
+    printhello();
     return 0;
 }

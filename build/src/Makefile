@@ -116,6 +116,44 @@ depend:
 	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/cmakelib.dir/rule:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/cmakelib.dir/rule
+.PHONY : src/CMakeFiles/cmakelib.dir/rule
+
+# Convenience name for target.
+cmakelib: src/CMakeFiles/cmakelib.dir/rule
+.PHONY : cmakelib
+
+# fast build rule for target.
+cmakelib/fast:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/build
+.PHONY : cmakelib/fast
+
+printhello.o: printhello.cpp.o
+.PHONY : printhello.o
+
+# target to build an object file
+printhello.cpp.o:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/printhello.cpp.o
+.PHONY : printhello.cpp.o
+
+printhello.i: printhello.cpp.i
+.PHONY : printhello.i
+
+# target to preprocess a source file
+printhello.cpp.i:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/printhello.cpp.i
+.PHONY : printhello.cpp.i
+
+printhello.s: printhello.cpp.s
+.PHONY : printhello.s
+
+# target to generate assembly for a file
+printhello.cpp.s:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/printhello.cpp.s
+.PHONY : printhello.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... cmakelib"
+	@echo "... printhello.o"
+	@echo "... printhello.i"
+	@echo "... printhello.s"
 .PHONY : help
 
 

@@ -116,6 +116,32 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named cmakelib
+
+# Build rule for target.
+cmakelib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmakelib
+.PHONY : cmakelib
+
+# fast build rule for target.
+cmakelib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/build
+.PHONY : cmakelib/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +150,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... cmakelib"
+	@echo "... main"
 .PHONY : help
 
 

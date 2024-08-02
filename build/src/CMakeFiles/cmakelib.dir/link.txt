@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcmakelib.a CMakeFiles/cmakelib.dir/printhello.cpp.o
+/usr/bin/ranlib libcmakelib.a

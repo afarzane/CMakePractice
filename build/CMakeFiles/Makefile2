@@ -84,7 +84,7 @@ clean: examples/clean
 # Directory level rules for directory examples
 
 # Recursive "all" directory target.
-examples/all:
+examples/all: examples/CMakeFiles/main.dir/all
 .PHONY : examples/all
 
 # Recursive "preinstall" directory target.
@@ -92,7 +92,7 @@ examples/preinstall:
 .PHONY : examples/preinstall
 
 # Recursive "clean" directory target.
-examples/clean:
+examples/clean: examples/CMakeFiles/main.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -114,7 +114,7 @@ inc/clean:
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all:
+src/all: src/CMakeFiles/cmakelib.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -122,8 +122,60 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean:
+src/clean: src/CMakeFiles/cmakelib.dir/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/cmakelib.dir
+
+# All Build rule for target.
+src/CMakeFiles/cmakelib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles --progress-num=1,2 "Built target cmakelib"
+.PHONY : src/CMakeFiles/cmakelib.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/cmakelib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/cmakelib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/cmakelib.dir/rule
+
+# Convenience name for target.
+cmakelib: src/CMakeFiles/cmakelib.dir/rule
+.PHONY : cmakelib
+
+# clean rule for target.
+src/CMakeFiles/cmakelib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/cmakelib.dir/build.make src/CMakeFiles/cmakelib.dir/clean
+.PHONY : src/CMakeFiles/cmakelib.dir/clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/main.dir
+
+# All Build rule for target.
+examples/CMakeFiles/main.dir/all: src/CMakeFiles/cmakelib.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles --progress-num=3,4 "Built target main"
+.PHONY : examples/CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amiralifa/Documents/Programming/CMakeTutorial/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: examples/CMakeFiles/main.dir/rule
+.PHONY : main
+
+# clean rule for target.
+examples/CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/clean
+.PHONY : examples/CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

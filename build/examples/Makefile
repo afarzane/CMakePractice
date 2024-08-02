@@ -116,6 +116,44 @@ depend:
 	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+examples/CMakeFiles/main.dir/rule:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/main.dir/rule
+.PHONY : examples/CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: examples/CMakeFiles/main.dir/rule
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/amiralifa/Documents/Programming/CMakeTutorial/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/main.dir/build.make examples/CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... main"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
